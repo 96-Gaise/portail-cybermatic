@@ -1,0 +1,30 @@
+                            .cyber {
+                                background-color: #2aade4;
+                            }
+                            
+                            .nav-pills .nav-link.active,
+                            .nav-pills .nav-link.active:focus,
+                            .nav-pills .nav-link.active:hover,
+                            .nav-pills .nav-item.open .nav-link,
+                            .nav-pills .nav-item.open .nav-link:focus,
+                            .nav-pills .nav-item.open .nav-link:hover {
+                                background-color: #f5921c;
+                                font-weight: 500;
+                            }
+                            
+                            .btn-cyber {
+                                background-color: #f5921c;
+                                color: #fff;
+                            }
+                            
+                            .main-panel>.header {
+                                background-color: #1e59aa;
+                            }
+                            
+                            .text-center-cyber {
+                                text-align: center;
+                            }
+                            
+                            .cyber-nb {
+                                background-color: #1e59aa;
+                            }

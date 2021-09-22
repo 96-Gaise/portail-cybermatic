@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Milestone">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Milestone">
+
+    <meta name="theme-color" content="#4C7FF0">
+
+    <title>Milestone - Bootstrap 4 Dashboard Template</title>
+
+    <!-- page stylesheets -->
+    <link rel="stylesheet" href="vendor/bower-jvectormap/jquery-jvectormap-1.2.2.css" />
+    <!-- end page stylesheets -->
+
+    <!-- build:css({.tmp,app}) styles/app.min.css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/pace/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="styles/app.css" id="load_styles_before" />
+    <link rel="stylesheet" href="styles/app.skins.css" />
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/e-school.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="app">
+        <!--sidebar panel-->
+        <div class="off-canvas-overlay" data-toggle="sidebar"></div>
+        <div class="sidebar-panel">
+            <div class="brand">
+                <!-- toggle offscreen menu -->
+                <a href="javascript:;" data-toggle="sidebar" class="toggle-offscreen hidden-lg-up">
+                    <i class="material-icons">menu</i>
+                </a>
+                <!-- /toggle offscreen menu -->
+                <!-- logo -->
+                <!-- <a class="brand-logo">
+                    <img class="expanding-hidden" width="50" height="" src="images/e-school.png" alt="" />
+                </a> -->
+                <!-- /logo -->
+            </div>
+            <div class="nav-profile dropdown">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                    <div class="user-image">
+                        <img src="images/avatar.jpg" class="avatar img-circle" alt="user" title="user" />
+                    </div>
+                    <div class="user-info expanding-hidden">
+                        Betty Simmons
+                        <small class="bold">Administrateur</small>
+                    </div>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:;">
+                        Paramètre</a>
+                    <a class="dropdown-item" href="javascript:;">
+                        <!-- <i class="material-icons text-primary">speaker_notes</i> -->
+                        <span>Notifications</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="extra-signin.html">
+                       Déconnexion
+                    </a>
+                </div>
+            </div>
+            <!-- main navigation -->
+            <nav>
+                <p class="nav-title">Lien directe</p>
+                <ul class="nav">
+                    <!-- dashboard -->
+                    <li>
+                        <a href="index.html" class="active">
+                            <i class="material-icons text-primary">home</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <!-- /dashboard -->
+                    <!-- apps -->
+                    <li>
+                        <a href="javascript:;">
+                            <span class="menu-caret">
+                  <i class="material-icons">arrow_drop_down</i>
+                </span>
+                            <i class="material-icons">format_list_bulleted</i>
+                            <span>Listes</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="liste-teacher-agents.html">
+                                    <span>Agents</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="liste-teacher-agents.html">
+                                    <span>Enseignants</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="app-messages.html">
+                                    <span>Elèves</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- /apps -->
+
+                    <!-- apps -->
+                    <li>
+                        <a href="javascript:;">
+                            <span class="menu-caret">
+                  <i class="material-icons">arrow_drop_down</i>
+                </span>
+                            <i class="material-icons">format_list_bulleted</i>
+                            <span>Gestion des notes</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="liste-teacher-agents.html">
+                                    <span>Saisir une note</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="liste-teacher-agents.html">
+                                    <span>Toutes les notes</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- /apps -->
+
+                    <!-- ui -->
+                    <li>
+                        <a href="javascript:;">
+                            <span class="menu-caret">
+                  <i class="material-icons">arrow_drop_down</i>
+                </span>
+                            <i class="material-icons text-primary">school</i>
+                            <span>Resultat scolaire</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <!-- cards -->
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="menu-caret">
+                      <i class="material-icons">arrow_drop_down</i></span>
+                                    <span>Cards</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="card-basic.html"><span>Basic</span>
+                      </a>
+                                    </li>
+                                    <li>
+                                        <a href="card-portlets.html"><span>Portlets</span>
+                      </a>
+                                    </li>
+                                    <li>
+                                        <a href="card-draggable.html"><span>Draggable</span>
+                      </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- /cards -->
+                            <!-- forms -->
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="menu-caret">
+                      <i class="material-icons">arrow_drop_down</i></span>
+                                    <span>Forms</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="form-basic.html">
+                                            <span>Basic</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="form-plugins.html">
+                                            <span>Plugins</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="form-editors.html">
+                                            <span>Editors</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="form-validation.html">
+                                            <span>Validation</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="form-masks.html">
+                                            <span>Masks</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="form-upload.html">
+                                            <span>Upload</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="form-wizard.html">
+                                            <span>Wizard</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- /forms -->
+                            <!-- tables -->
+                            <li>
+                                <a href="javascript:;">
+                                    <span class="menu-caret">
+                      <i class="material-icons">arrow_drop_down</i></span>
+                                    <span>Tables</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="table-basic.html">
+                                            <span>Basic</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="table-responsive.html">
+                                            <span>Responsive</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="table-datatables.html">
+                                            <span>Datatables</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="table-xeditable.html">
+                                            <span>xeditable</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- /ui -->
+                </ul>
+            </nav>
+            <!-- /main navigation -->
+        </div>
+        <!-- /sidebar panel -->
+        <!-- content panel -->
+        <div class="main-panel">
+            <!-- top header -->
+            <nav class="header navbar">
+                <div class="header-inner">
+                    <div class="navbar-item navbar-spacer-right brand hidden-lg-up">
+                        <!-- toggle offscreen menu -->
+                        <a href="javascript:;" data-toggle="sidebar" class="toggle-offscreen">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <!-- /toggle offscreen menu -->
+                        <!-- logo -->
+                        <a class="brand-logo hidden-xs-down">
+                            <img src="images/e-school.png" alt="logo" />
+                        </a>
+                        <!-- /logo -->
+                    </div>
+                    <a class="navbar-item navbar-spacer-right navbar-heading hidden-md-down" href="#">
+                        <span>Tableau de bord</span>
+                    </a>
+                    <div class="navbar-search navbar-item">
+                        <form class="search-form">
+                            <i class="material-icons">search</i>
+                            <input class="form-control" type="text" placeholder="Recherche..." />
+                        </form>
+                    </div>
+                    <div class="navbar-item nav navbar-nav">
+                        <div class="nav-item nav-link dropdown">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="material-icons">notifications</i>
+                                <span class="tag tag-danger">4</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right notifications">
+                                <div class="dropdown-item">
+                                    <div class="notifications-wrapper">
+                                        <ul class="notifications-list">
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="notification-icon">
+                                                        <div class="circle-icon bg-success text-white">
+                                                            <i class="material-icons">arrow_upward</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification-message">
+                                                        <b>Sean</b> launched a new application
+                                                        <span class="time">2 seconds ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="notification-icon">
+                                                        <div class="circle-icon bg-danger text-white">
+                                                            <i class="material-icons">check</i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification-message">
+                                                        <b>Removed calendar</b> from app list
+                                                        <span class="time">4 hours ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="notification-icon">
+                              <span class="circle-icon bg-info text-white">J</span>
+                                                    </span>
+                                                    <div class="notification-message">
+                                                        <b>Jack Hunt</b> has
+                                                        <b>joined</b> mailing list
+                                                        <span class="time">9 days ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="notification-icon">
+                              <span class="circle-icon bg-primary text-white">C</span>
+                                                    </span>
+                                                    <div class="notification-message">
+                                                        <b>Conan Johns</b> created a new list
+                                                        <span class="time">9 days ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="notification-footer">Notifications</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- /top header -->
+
+            <!-- main area -->
+            <div class="main-content">
+                <div class="content-view">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="card card-block">
+                                <h5 class="m-b-0 v-align-middle text-overflow">
+                                    <span class="small pull-xs-right tag bg-primary p-y-0 p-x-xs" style="line-height: 24px;">
+                                        <span >100</span>
+                                    </span>
+                                    <i class="material-icons mr-2" style="font-size: x-large;">people</i><span> AGENTS</span>
+                                </h5>
+                                <hr class="separator">
+                                <div class="small text-overflow text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quis nam dolorum esse odio alias ipsam vel recusandae eos? Numquam eius <br> voluptas placeat dolores architecto mollitia <br> esse possimus deserunt aperiam
+                                    odit.
+                                </div>
+                                <div class="small text-overflow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="card card-block">
+                                <h5 class="m-b-0 v-align-middle text-overflow">
+                                    <span class="small pull-xs-right tag bg-primary p-y-0 p-x-xs" style="line-height: 24px;">
+                      <span >100</span>
+                                    </span>
+                                    <span> <i class="material-icons mr-2" style="font-size: x-large;">people</i> ENSEIGNEMENT</span>
+                                </h5>
+                                <hr class="separator">
+                                <div class="small text-overflow text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quis nam dolorum esse odio alias ipsam vel recusandae eos? Numquam eius <br> voluptas placeat dolores architecto mollitia <br> esse possimus deserunt aperiam
+                                    odit.
+                                </div>
+                                <div class="small text-overflow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="card card-block">
+                                <h5 class="m-b-0 v-align-middle text-overflow">
+                                    <span class="small pull-xs-right tag bg-primary p-y-0 p-x-xs" style="line-height: 24px;">
+                                        <span >100</span>
+                                    </span>
+                                    <span> <i class="material-icons mr-2" style="font-size: x-large;">school</i> ELEVES</span>
+                                </h5>
+                                <hr class="separator">
+                                <div class="small text-overflow text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quis nam dolorum esse odio alias ipsam vel recusandae eos? Numquam eius <br> voluptas placeat dolores architecto mollitia <br> esse possimus deserunt aperiam
+                                    odit.
+                                </div>
+                                <div class="small text-overflow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New bloc adding after first row -->
+                    <!-- statistique cards -->
+                    <h6 class="m-b-1 m-t-1">
+                        Statistiques
+                    </h6>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card card-block text-right">
+                                <i class="material-icons mr-2" style="font-size: x-large;">people</i><span> AGENTS</span>
+                                <hr class="separator">
+                                <p class="card-text">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <i class="material-icons" style="font-size: 100px;">person</i>
+                                        </div>
+                                        <div class="col-lg-7 p-a-1 text-lg-left m-l-2">
+                                            <span class="m-r-3">Homme : 152</span> <br>
+                                            <hr class="separator">
+                                            <span class="m-r-3">Femme  : 152</span>
+                                        </div>
+                                    </div>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card card-block text-right">
+                                <i class="material-icons mr-2" style="font-size: x-large;">people</i><span> ENSEIGNANTS</span>
+                                <hr class="separator">
+                                <p class="card-text">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <i class="material-icons" style="font-size: 100px;">person</i>
+                                        </div>
+                                        <div class="col-lg-7 p-a-1 text-lg-left m-l-2">
+                                            <span class="m-r-3">Homme : 152</span> <br>
+                                            <hr class="separator">
+                                            <span class="m-r-3">Femme  : 152</span>
+                                        </div>
+                                    </div>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card card-block text-right">
+                                <i class="material-icons mr-2" style="font-size: x-large;">people</i><span> ELEVES</span>
+                                <hr class="separator">
+                                <p class="card-text">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <i class="material-icons" style="font-size: 100px;">person</i>
+                                        </div>
+                                        <div class="col-lg-7 p-a-1 text-lg-left m-l-2">
+                                            <span class="m-r-3">Homme : 152</span> <br>
+                                            <hr class="separator">
+                                            <span class="m-r-3">Femme  : 152</span>
+                                        </div>
+                                    </div>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end statistiques -->
+
+                    <!-- bloc of list agents, teachers and pupils -->
+                    <div class="row" style="font-size: smaller;">
+                        <!-- liste des agents -->
+                        <div class="card col-lg-12">
+                            <div class="card-header no-bg b-a-0">
+                                <h6 class="card-title text-uppercase">Liste des agents</h6>
+                            </div>
+                            <div class="card-body card-block">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead class="bg-dark-dark text-white text-uppercase">
+                                            <tr>
+                                                <th>
+                                                    Code
+                                                </th>
+                                                <th>
+                                                    Nom(s)
+                                                </th>
+                                                <th>
+                                                    Prénom(s)
+                                                </th>
+                                                <th>Téléphone</th>
+                                                <th>Email</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Mark
+                                                </td>
+                                                <td>
+                                                    Otto
+                                                </td>
+                                                <td>
+                                                    @mdo
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="offset-lg-5 col-lg-2">
+                                    <span class="btn btn-sm shadow btn-block btn-light">
+                                            <a href="" class="d-inline"> Voir la liste</a>
+                                         </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr class="separator m-b-2">
+
+                    </div>
+                    <div class="row" style="font-size: smaller;">
+                        <!-- liste des enseignants -->
+                        <div class="card col-lg-12">
+                            <div class="card-header no-bg b-a-0">
+                                <h6 class="card-title text-uppercase ">Liste des enseignants</h6>
+                            </div>
+                            <div class="card-body card-block">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead class="bg-dark-dark text-white text-uppercase">
+                                            <tr>
+                                                <th>
+                                                    Code
+                                                </th>
+                                                <th>
+                                                    Nom(s)
+                                                </th>
+                                                <th>
+                                                    Prénom(s)
+                                                </th>
+                                                <th>Téléphone</th>
+                                                <th>Email</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Mark
+                                                </td>
+                                                <td>
+                                                    Otto
+                                                </td>
+                                                <td>
+                                                    @mdo
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="offset-lg-5 col-lg-2">
+                                    <span class="btn btn-sm shadow btn-block btn-light">
+                                            <a href="" class="d-inline"> Voir la liste</a>
+                                         </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr class="separator m-b-2">
+
+                    </div>
+                    <div class="row" style="font-size: smaller;">
+                        <!-- liste des eleves -->
+                        <div class="card col-lg-12">
+                            <div class="card-header no-bg b-a-0">
+                                <h6 class="card-title text-uppercase ">Liste des eleves</h6>
+                            </div>
+                            <div class="card-body card-block">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead class="bg-dark-dark text-white text-uppercase">
+                                            <tr>
+                                                <th>
+                                                    Code
+                                                </th>
+                                                <th>
+                                                    Nom(s)
+                                                </th>
+                                                <th>
+                                                    Prénom(s)
+                                                </th>
+                                                <th>Téléphone</th>
+                                                <th>Email</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Mark
+                                                </td>
+                                                <td>
+                                                    Otto
+                                                </td>
+                                                <td>
+                                                    @mdo
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="offset-lg-5 col-lg-2">
+                                    <span class="btn btn-sm shadow btn-block btn-light">
+                                            <a href="" class="d-inline"> Voir la liste</a>
+                                         </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr class="separator m-b-2">
+
+                    </div>
+                    <!-- end list's bloc -->
+                    <!-- end new bloc -->
+
+                    <!-- bottom footer -->
+                    <div class="content-footer ">
+                        <nav class="footer-left ">
+                            <ul class="nav ">
+                                <li>
+                                    <a href="javascript:; ">
+                                        <span>Cybermatic</span> &copy; 2016 Your App
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- /bottom footer -->
+                </div>
+                <!-- /main area -->
+            </div>
+            <!-- /content panel -->
+
+            <!--Chat panel-->
+            <div class="modal fade sidebar-modal chat-panel " tabindex="-1 " role="dialog " aria-labelledby="chat-panel " aria-hidden="true ">
+                <div class="modal-dialog ">
+                    <div class="modal-content ">
+                        <div class="chat-header ">
+                            <a class="pull-right " href="javascript:; " data-dismiss="modal ">
+                                <i class="material-icons ">close</i>
+                            </a>
+                            <div class="chat-header-title ">People</div>
+                        </div>
+                        <div class="modal-body flex scroll-y ">
+                            <div class="chat-group ">
+                                <div class="chat-group-header ">Favourites</div>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-online "></span>
+                                    <span>Catherine Moreno</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-online "></span>
+                                    <span>Denise Peterson</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-away "></span>
+                                    <span>Charles Wilson</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-away "></span>
+                                    <span>Melissa Welch</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-no-disturb "></span>
+                                    <span>Vincent Peterson</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Pamela Wood</span>
+                                </a>
+                            </div>
+                            <div class="chat-group ">
+                                <div class="chat-group-header ">Online</div>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-online "></span>
+                                    <span>Tammy Carpenter</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-away "></span>
+                                    <span>Emma Sullivan</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-no-disturb "></span>
+                                    <span>Andrea Brewer</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-online "></span>
+                                    <span>Betty Simmons</span>
+                                </a>
+                            </div>
+                            <div class="chat-group ">
+                                <div class="chat-group-header ">Other</div>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Denise Peterson</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Jose Rivera</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Diana Robertson</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>William Fields</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Emily Stanley</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Jack Hunt</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Sharon Rice</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Mary Holland</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Diane Hughes</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Steven Smith</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Emily Henderson</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Wayne Kelly</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Jane Garcia</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Jose Jimenez</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Rachel Burton</span>
+                                </a>
+                                <a href="javascript:; " data-toggle="modal " data-target=".chat-message ">
+                                    <span class="status-offline "></span>
+                                    <span>Samantha Ruiz</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade chat-message " tabindex="-1 " role="dialog " aria-labelledby="chat-message " aria-hidden="true ">
+                <div class="modal-dialog ">
+                    <div class="modal-content ">
+                        <div class="chat-header ">
+                            <div class="pull-right dropdown ">
+                                <a href="javascript:; " class="dropdown-toggle " data-toggle="dropdown ">
+                                    <i class="material-icons ">more_vert</i>
+                                </a>
+                                <div class="dropdown-menu " role="menu ">
+                                    <a class="dropdown-item " href="javascript:; ">Profile</a>
+                                    <a class="dropdown-item " href="javascript:; ">Clear messages</a>
+                                    <a class="dropdown-item " href="javascript:; ">Delete conversation</a>
+                                    <a class="dropdown-item " href="javascript:; " data-dismiss="modal ">Close chat</a>
+                                </div>
+                            </div>
+                            <div class="chat-conversation-title ">
+                                <img src="images/face1.jpg " class="avatar avatar-xs img-circle m-r-1 pull-left " alt=" ">
+                                <div class="overflow-hidden ">
+                                    <span><strong>Charles Wilson</strong></span>
+                                    <small>Last seen today at 03:11</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body flex scroll-y ">
+                            <p class="text-xs-center text-muted small text-uppercase bold m-b-1 ">Yesterday</p>
+                            <div class="chat-conversation-user them ">
+                                <div class="chat-conversation-message ">
+                                    <p>Hey.</p>
+                                </div>
+                            </div>
+                            <div class="chat-conversation-user them ">
+                                <div class="chat-conversation-message ">
+                                    <p>How are the wife and kids, Taylor?</p>
+                                </div>
+                            </div>
+                            <div class="chat-conversation-user me ">
+                                <div class="chat-conversation-message ">
+                                    <p>Pretty good, Samuel.</p>
+                                </div>
+                            </div>
+                            <p class="text-xs-center text-muted small text-uppercase bold m-b-1 ">Today</p>
+                            <div class="chat-conversation-user them ">
+                                <div class="chat-conversation-message ">
+                                    <p>Curabitur blandit tempus porttitor.</p>
+                                </div>
+                            </div>
+                            <div class="chat-conversation-user me ">
+                                <div class="chat-conversation-message ">
+                                    <p>Goodnight!</p>
+                                </div>
+                            </div>
+                            <div class="chat-conversation-user them ">
+                                <div class="chat-conversation-message ">
+                                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-conversation-footer ">
+                            <button class="chat-left ">
+                  <i class="material-icons ">face</i>
+                </button>
+                            <div class="chat-input " contenteditable=" "></div>
+                            <button class="chat-right ">
+                  <i class="material-icons ">photo</i>
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Chat panel-->
+
+        </div>
+
+        <script type="text/javascript ">
+            window.paceOptions = {
+                document: true,
+                eventLag: true,
+                restartOnPushState: true,
+                restartOnRequestAfter: true,
+                ajax: {
+                    trackMethods: ['POST', 'GET']
+                }
+            };
+        </script>
+
+        <!-- build:js({.tmp,app}) scripts/app.min.js -->
+        <script src="vendor/jquery/dist/jquery.js "></script>
+        <script src="vendor/pace/pace.js "></script>
+        <script src="vendor/tether/dist/js/tether.js "></script>
+        <script src="vendor/bootstrap/dist/js/bootstrap.js "></script>
+        <script src="vendor/fastclick/lib/fastclick.js "></script>
+        <script src="scripts/constants.js "></script>
+        <script src="scripts/main.js "></script>
+        <!-- endbuild -->
+
+        <!-- page scripts -->
+        <script src="vendor/flot/jquery.flot.js "></script>
+        <script src="vendor/flot/jquery.flot.resize.js "></script>
+        <script src="vendor/flot/jquery.flot.stack.js "></script>
+        <script src="vendor/flot-spline/js/jquery.flot.spline.js "></script>
+        <script src="vendor/bower-jvectormap/jquery-jvectormap-1.2.2.min.js "></script>
+        <script src="data/maps/jquery-jvectormap-us-aea.js "></script>
+        <script src="vendor/jquery.easy-pie-chart/dist/jquery.easypiechart.js "></script>
+        <script src="vendor/noty/js/noty/packaged/jquery.noty.packaged.min.js "></script>
+        <script src="scripts/helpers/noty-defaults.js "></script>
+        <!-- end page scripts -->
+
+        <!-- initialize page scripts -->
+        <script src="scripts/dashboard/dashboard.js "></script>
+        <!-- end initialize page scripts -->
+
+        <!-- page scripts -->
+        <script src="vendor/Chart.js/dist/Chart.js "></script>
+        <!-- end page scripts -->
+
+        <!-- initialize page scripts -->
+        <script src="scripts/charts/chartjs.js "></script>
+        <!-- end initialize page scripts -->
+
+</body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
